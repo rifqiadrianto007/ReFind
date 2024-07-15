@@ -1,0 +1,9 @@
+h1, h2 {
+    color: #ccd0cf;
+}
+
+body {
+    background-image: url(../GAMBAR/bg-login.png);
+    background-repeat: inherit;
+    background-position: center;
+}
