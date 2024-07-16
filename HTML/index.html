@@ -6,23 +6,21 @@
     <title>ReFind.</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
-    <h1>ReFind.</h1>
-    <h2>"Temukan dan laporkan barang hilang 
-        dengan mudah"</h2>
-    <br><br><br><br>
-
-    <form action="">
-        <label for="username">Username</label>
-        <br>
-        <input type="text" id="username">
-        <br>
-        <label for="password">Password</label>
-        <br>
-        <input type="text" id="password">
-        <br><br>
-        <button type="submit">Login</button>
-    </form>
-    
-</body>
+    <body>
+        <div class="container">
+            <div class="login-box">
+                <h1>ReFind.</h1>
+                <form>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <h2 class="tagline">
+                <p>"Temukan dan laporkan barang hilang dengan mudah"</p>
+            </h2>
+        </div>
+    </body>
 </html>
