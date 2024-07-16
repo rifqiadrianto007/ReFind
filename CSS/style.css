@@ -1,18 +1,33 @@
+:root {
+    --primary-color: #000000;
+    --first-color: #061532;
+    --second-color: #4A5B6B;
+    --third-color: #95A3A6;
+    --forth-color: #ccd0cf;
+}
+
 h1, h2 {
     font-family: nexa;
-    color: #CCD0CF;
+    color: var(--forth-color);
 }
 
 h1 {
     position: absolute;
-    top: -75px;
-    left: -350px;
-    font-size: 36px;
+    top: 5px;
+    left: -370px;
+    font-size: 50px;
     font-weight: bold;
 }
 
+h2 {
+    position: relative;
+    right: -220px;
+    top: -30px;
+    font-size: larger;
+}
+
 body {
-    background-image: url(../GAMBAR/bg-login.png);
+    background-image: url(../refind/assets/bg-login.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -26,13 +41,14 @@ body {
 
 body {
     font-family: nexa;
-    background-color: #4A5B6B;
-    color: #CCD0CF;
+    background-color: var(--second-color);
+    color: var(--forth-color);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    padding-left: 50px;
 }
 
 .container {
@@ -44,24 +60,20 @@ body {
 }
 
 .login-box {
-    background: #4A5B6B;
+    background: rgba(250, 249, 249, 0.05);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
-    margin: auto;
     position: relative;
     z-index: 2;
-    
+    left: 0;
+    bottom: -50px;
 }
 
 .login-box form {
     top: -60px;
     right: 650px;
-}
-
-.login-box h1 {
-    margin-bottom: 20px;
 }
 
 .login-box label {
@@ -76,6 +88,7 @@ body {
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
+    background-color: var(--second-color);
 }
 
 .login-box button {
@@ -83,7 +96,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #000000;
+    background-color: var(--primary-color);
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
@@ -91,7 +104,7 @@ body {
 }
 
 .login-box button:hover {
-    background-color: #061532;
+    background-color: var(--first-color);
 }
 
 .tagline {
@@ -101,9 +114,3 @@ body {
     font-size: 20px;
     max-width: 450px;
 }
-
-.tagline p {
-    margin: 0;
-}
-
-
