@@ -105,6 +105,8 @@ body {
 
 .login-box button:hover {
     background-color: var(--first-color);
+    --ms-transform: rotate(70deg);
+    transform: rotate(70deg);
 }
 
 .tagline {
