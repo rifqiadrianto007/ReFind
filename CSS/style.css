@@ -1,14 +1,29 @@
+:root {
+    --primary-color: #000000;
+    --first-color: #061532;
+    --second-color: #4A5B6B;
+    --third-color: #95A3A6;
+    --forth-color: #ccd0cf;
+}
+
 h1, h2 {
     font-family: nexa;
-    color: #CCD0CF;
+    color: var(--forth-color);
 }
 
 h1 {
     position: absolute;
-    top: -75px;
-    left: -350px;
-    font-size: 36px;
+    top: -30px;
+    left: -230px;
+    font-size: 65px;
     font-weight: bold;
+}
+
+h2 {
+    position: relative;
+    right: -220px;
+    top: -30px;
+    font-size: larger;
 }
 
 body {
@@ -16,6 +31,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+}
+
+.logo {
+    position: relative;
+    left: 530px;
+    top: -450px;
 }
 
 * {
@@ -26,13 +47,14 @@ body {
 
 body {
     font-family: nexa;
-    background-color: #4A5B6B;
-    color: #CCD0CF;
+    background-color: var(--second-color);
+    color: var(--forth-color);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    padding-left: 50px;
 }
 
 .container {
@@ -44,66 +66,57 @@ body {
 }
 
 .login-box {
-    background: #4A5B6B;
+    background: rgba(250, 249, 249, 0.05);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    margin: auto;
+    width: 350px;
     position: relative;
     z-index: 2;
-    
-}
-
-.login-box form {
-    top: -60px;
-    right: 650px;
-}
-
-.login-box h1 {
-    margin-bottom: 20px;
+    right: -100px;
+    bottom: -150px;
 }
 
 .login-box label {
     display: block;
     text-align: left;
-    margin: 10px 0 5px;
+    margin: 0px 0 5px;
 }
 
 .login-box input {
+    font-family: nexa;
+    font-weight: bold;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    background-color: var(--second-color);
 }
 
 .login-box button {
     width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    background-color: #000000;
+    border-radius: 20px;
+    background-color: var(--primary-color);
     color: #ffffff;
-    font-size: 16px;
+    font-family: nexa;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 30px;
 }
 
 .login-box button:hover {
-    background-color: #061532;
+    background-color: var(--first-color);
 }
 
 .tagline {
     position: absolute;
-    top: -60px;
+    top: 30px;
     right: 20px;
-    font-size: 20px;
-    max-width: 450px;
+    font-size: 30px;
+    max-width: 750px;
 }
-
-.tagline p {
-    margin: 0;
-}
-
-
