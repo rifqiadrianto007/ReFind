@@ -6,23 +6,61 @@
     <title>ReFind.</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
-    <div class="beranda1">
-        <div class="menu-beranda">
-            <h3>Mekanisme Operasional</h3>
-            <h4>Kehilangan Barang</h4>
-            <h4>Penemuan Barang</h4>
+<body class="page-2">
+    <div class="menu-beranda">
+        <h2>Mekanisme Operasional</h2>
+        <div class="optional">
+            <div>
+                <h3>Kehilangan Barang</h3>
+                <ol>
+                    <li>Jika Anda kehilangan barang, harap segera laporkan dengan mengisi form di bawah ini.</li>
+                    <li>Admin akan meninjau laporan Anda dan mencocokkannya dengan barang yang ditemukan.</li>
+                    <li>Anda akan dihubungi jika ada barang yang cocok dengan deskripsi yang Anda berikan.</li>
+                </ol>
+                <h3>Penemuan Baarang</h3>
+                <ol>
+                    <li>Jika Anda menemukan barang yang hilang, harap laporkan dengan mengisi form di bawah ini.</li>
+                    <li>Admin akan meninjau laporan Anda dan mencocokkannya dengan laporan kehilangan yang ada.</li>
+                    <li>Anda akan dihubungi jika barang tersebut cocok dengan laporan kehilangan yang ada.</li>
+                </ol>
+            </div>
         </div>
-        <div class="navbar">
-            <h4><a href="page-2.html">Beranda</a></h4>
-            <h4><a href="page-3.html">Kehilangan</a></h4>
-            <h4><a href="page-4.html">Penemuan</a></h4>
-        </div>
-        <div class="tagline-beranda">
-            <h1>ReFind.</h1>
-            <h2>"Temukan dan laporkan barang hilang dengan mudah"</h2>
-        </div>
-        <p class="logo"><img src="../GAMBAR/logo semua.png" alt="logo lengkap" width="300px"></p>
     </div>
+
+    <div class="form">
+        <h2>Form Laporan</h2>
+        <form action="">
+            <input type="text"name="nama_lengkap" placeholder="Masukkan nama lengkap anda">
+            <input type="text"name="no_telfon" placeholder="Masukkan nomor telepon anda">
+            <input type="text"name="fakultas" placeholder="Masukkan nama fakultas anda">
+            <select name="status" id="">
+                <option value="mahasiswa">Mahasiswa</option>
+                <option value="staf">Staff</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+            <select name="jenis-laporan" id="">
+                <option value="hilang">Kehilangan Barang</option>
+                <option value="temuan">Penemuan Barang</option>
+            </select>
+            <input type="text"name="nama_barang" placeholder="Masukkan nama barang">
+            <textarea name="deskripsi" placeholder="Masukkan deskripsi barang" id=""></textarea>
+            <input type="text"name="waktu" placeholder="Masukkan hari dan tanggal">
+            <input type="text"name="lokasi" placeholder="Masukkan nama tempat secara spesifik">
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <div class="navbar">
+        <a href="page-2.html">Beranda</a>
+        <a href="page-3.html">Kehilangan</a>
+        <a href="page-4.html">Penemuan</a>
+    </div>
+
+    <div class="tagline-beranda">
+        <h1>ReFind.</h1>
+        <h2>"Temukan dan laporkan barang hilang dengan mudah"</h2>
+    </div>
+        <p class="logo-2"><img src="../GAMBAR/logo semua.png" alt="logo lengkap" width="300px"></p>
+        <p class="header"><img src="../GAMBAR/header.png" alt="header beranda"></p>
 </body>
 </html>

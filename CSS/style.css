@@ -11,7 +11,7 @@ h1, h2 {
     color: var(--forth-color);
 }
 
-h1 {
+.tagline h1 {
     position: absolute;
     top: -30px;
     left: -230px;
@@ -19,7 +19,7 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+.tagline h2 {
     position: relative;
     right: -220px;
     top: -30px;
@@ -35,7 +35,7 @@ body {
 
 .logo {
     position: relative;
-    left: 530px;
+    left: 700px;
     top: -450px;
 }
 
