@@ -13,9 +13,9 @@ h1, h2 {
 
 h1 {
     position: absolute;
-    top: -75px;
-    left: -350px;
-    font-size: 36px;
+    top: -30px;
+    left: -230px;
+    font-size: 65px;
     font-weight: bold;
 }
 
@@ -27,7 +27,7 @@ h2 {
 }
 
 body {
-    background-image: url(../refind/assets/bg-login.png);
+    background-image: url(../GAMBAR/bg-login.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -70,20 +70,11 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    margin: auto;
+    width: 350px;
     position: relative;
     z-index: 2;
-    
-}
-
-.login-box form {
-    top: -60px;
-    right: 650px;
-}
-
-.login-box h1 {
-    margin-bottom: 20px;
+    right: -100px;
+    bottom: -150px;
 }
 
 .login-box label {
@@ -99,15 +90,16 @@ body {
     padding: 10px;
     margin-bottom: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    background-color: var(--second-color);
 }
 
 .login-box button {
     width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    background-color: #000000;
+    border-radius: 20px;
+    background-color: var(--primary-color);
     color: #ffffff;
     font-family: nexa;
     font-size: 20px;
@@ -118,7 +110,7 @@ body {
 }
 
 .login-box button:hover {
-    background-color: #061532;
+    background-color: var(--first-color);
 }
 
 .tagline {
@@ -128,9 +120,3 @@ body {
     font-size: 30px;
     max-width: 750px;
 }
-
-.tagline p {
-    margin: 0;
-}
-
-
