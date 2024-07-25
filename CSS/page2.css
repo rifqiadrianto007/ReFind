@@ -66,7 +66,7 @@
     
 }
 
-.form {
+/* .form {
     margin: 20px auto;
     padding: 20px;
     background-color: white;
@@ -94,7 +94,7 @@
     color: white;
     border: none;
     cursor: pointer;
-}
+} */
 
 .wrapper {
     display: flex;
@@ -155,4 +155,56 @@ h1 {
     text-align: center;
     position: relative;
     top: -355px;
+}
+
+.form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--second-color);
+    border-radius: 25px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 25);
+    text-align: justify;
+    position: relative;
+    top: -350px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;
+}
+
+.form input, .form select, .form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--first-color);
+    color: white;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    text-align: justify;
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    margin: 30px 0;
+    border: 1px solid #ccc;
+}
+
+button:hover {
+    background-color: #357abd;
 }
