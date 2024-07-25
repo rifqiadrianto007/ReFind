@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReFind.</title>
+    <link rel="icon" type="iamge/png" href="../GAMBAR/Logo 2.png">
     <link rel="stylesheet" href="../CSS/page2.css">
 </head>
 <body class="page-2">
@@ -11,7 +12,7 @@
         <a href="page-2.html">Beranda</a>
         <a href="page-3.html">Kehilangan</a>
         <a href="page-4.html">Penemuan</a>
-        <p class="logo-2"><img src="../GAMBAR/logo semua.png" alt="logo lengkap" width="200px"></p>
+        <p class="logo-2"><img src="../GAMBAR/logo semua.png" alt="logo lengkap" width="300px"></p>
     </div>
     <div>
         <p class="header"><img src="../GAMBAR/header.png" alt="header beranda" width="100%"></p>
@@ -20,54 +21,64 @@
         <h1>ReFind.</h1>
         <h2>"Temukan dan laporkan barang hilang dengan mudah"</h2>
     </div>
-    </div>
+    <div>
         <div class="line-container">
             <div class="line"></div>
             <h1>Mekanisme Operasional</h1>
             <div class="line"></div>
         </div>
-        <div class="title-isi">
-            <h1 class="title-isi">Kehilangan Barang</h1>
-            <h1 class="title-isi">Penemuan Barang</h1>
-        </div>
         <div class = "wrapper">
             <div class = "card">
                 <h1 class="title_isi">Kehilangan Barang</h1>
                 <ol>
-                    <li class="description"> Jika Anda kehilangan barang, harap segera laporkan dengan mengisi form di bawah ini.</li>
-                    <li class="description"> Admin akan meninjau laporan Anda dan mencocokkannya dengan barang yang ditemukan.</li>
-                    <li class="description"> Anda akan dihubungi jika ada barang yang cocok dengan deskripsi yang Anda berikan.</li>
+                    <li class="description">Jika Anda merasa kehilangan, ingat kapan terakhir kali Anda melihat atau menggunakan barang tersebut.</li>
+                    <li class="description">Segera laporkan kehilangan dengan mengisi form yang telah disediakan.</li>
+                    <li class="description">Pastikan untuk mengisi form dengan detail, termasuk deskripsi barang, serta informasi kontak yang dapat dihubungi.</li>
+                    <li class="description">Pantau terus pada menu "Penemuan" untuk mendapatkan informasi lanjutan apabila barang telah ditemukan.</li>
                 </ol>
             </div>
             <div class = "card">
                 <h1 class="title_isi">Penemuan Barang</h1>
                 <ol>
-                    <li>Jika Anda menemukan barang yang hilang, harap laporkan dengan mengisi form di bawah ini.</li>
-                    <li>Admin akan meninjau laporan Anda dan mencocokkannya dengan laporan kehilangan yang ada.</li>
-                    <li>Anda akan dihubungi jika barang tersebut cocok dengan laporan kehilangan yang ada.</li>
+                    <li>Jika Anda menemukan barang yang hilang, simpan barang tersebut dengan aman.</li>
+                    <li>Segera laporkan penemuan barang dengan mengisi form yang telah disediakan.</li>
+                    <li>Pastikan untuk mengisi form dengan detail, termasuk kontak yang dapat dihubungi oleh pemilik barang.</li>
+                    <li>Pantau terus pada menu "Kehilangan" untuk mendapatkan informasi lanjutan apabila ada orang yang merasa kehilangan barang tersebut.</li>
                 </ol>
             </div>
+        </div>
     </div>
 
+    <h2 class="laporan">Form Laporan</h2>
     <div class="form">
-        <h2>Form Laporan</h2>
         <form action="">
-            <input type="text"name="nama_lengkap" placeholder="Masukkan nama lengkap anda">
-            <input type="text"name="no_telfon" placeholder="Masukkan nomor telepon anda">
-            <input type="text"name="fakultas" placeholder="Masukkan nama fakultas anda">
-            <select name="status" id="">
+            <label for="username">Nama Lengkap</label>
+            <input type="text"name="nama_lengkap" id="username" placeholder="Masukkan nama lengkap anda" required>
+            <label for="nomor telefon">Nomor Telepon</label>
+            <input type="text"name="no_telfon" id="nomor telefon" placeholder="Masukkan nomor telepon anda" required>
+            <label for="fakultas">Fakultas</label>
+            <input type="text"name="fakultas" id="fakultas" placeholder="Masukkan nama fakultas anda">
+            <label for="status pelapor">Status Pelapor</label>
+            <select name="status" id="status pelapor">
                 <option value="mahasiswa">Mahasiswa</option>
                 <option value="staf">Staff</option>
                 <option value="lainnya">Lainnya</option>
             </select>
-            <select name="jenis-laporan" id="">
+            <label for="jenis">Apa yang ingin anda laporkan?</label>
+            <select name="jenis-laporan" id="jenis">
                 <option value="hilang">Kehilangan Barang</option>
                 <option value="temuan">Penemuan Barang</option>
             </select>
-            <input type="text"name="nama_barang" placeholder="Masukkan nama barang">
-            <textarea name="deskripsi" placeholder="Masukkan deskripsi barang" id=""></textarea>
-            <input type="date"name="waktu" placeholder="Masukkan hari dan tanggal">
-            <input type="text"name="lokasi" placeholder="Masukkan nama tempat secara spesifik">
+            <label for="nama barang">Barang yang hilang / ditemukan</label>
+            <input type="text"name="nama_barang" id="nama barang" placeholder="Masukkan nama barang">
+            <label for="deskripsi">Deskripsi barang</label>
+            <textarea name="deskripsi" id="deskripsi" placeholder="Masukkan deskripsi barang" id=""></textarea>
+            <label for="waktu">Kapan anda kehilangan / menemukan barang tersebut</label>
+            <input type="date"name="waktu" id="waktu" placeholder="Masukkan hari dan tanggal">
+            <label for="lokasi">Dimana terakhir melihat / menemukan barang tersebut</label>
+            <input type="text"name="lokasi" id="lokasi" placeholder="Masukkan nama tempat secara spesifik">
+            <label for="bukti">Bukti foto penemuan barang (Bagi yang menemukan barang)</label>
+            <button type="upload">Upload File</button>
             <button type="submit">SUBMIT</button>
         </form>
     </div>
