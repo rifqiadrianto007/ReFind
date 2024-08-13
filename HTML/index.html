@@ -10,7 +10,17 @@
     <script>
         function handleLogin(event) {
             event.preventDefault(); 
-            window.location.href = "page-2.html";
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "232410103098" && password === "QWERTY12345")
+            {
+                window.location.href = "page-2.html";
+            }
+            else {
+                document.getElementById('pesan - error').textContent = "Username atau Password Anda Salah!";
+            }
         }
     </script>
 </head>
