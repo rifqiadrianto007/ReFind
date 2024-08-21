@@ -20,29 +20,24 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
-    top: -45px ;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
     padding: 10px 16px;
     font-weight: bold;
     font-size: 25px;
-    position: relative;
-    top: -10px;
-    right: -35px;
 }
 
 .navbar p {
     margin-left: auto;
-    position: relative;
-    top: -11px;
+    color: white;
 }
 
 .header {
-    position: relative;
-    top: -125px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .tagline-beranda {
@@ -50,37 +45,26 @@
     font-size: 25px;
     padding: 20px;
     color: #ffff;
-    position: relative;
-    bottom: 425px;
-    left: 55px;
-}
-
-.line-container {
-    position: relative;
-    top: -395px;
-}
-
-.title-isi {
-    position: relative;
 }
 
 .wrapper {
     display: flex;
-    justify-content: justify;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     height: auto;
-    position: relative;
-    top: -355px;
+    padding: 20px;
 }
 
-.card{
+.card {
     background-color: var(--second-color);
-    color : #ffff;
-    padding: 40px;
-    margin: 45px;
+    color: #ffff;
+    padding: 20px;
+    margin: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     text-align: justify;
-    border-radius: 55px;
+    border-radius: 25px;
+    flex-basis: calc(33.333% - 40px);
 }
 
 .title-isi {
@@ -92,22 +76,13 @@
     color: #ffff;
 }
 
-.title_isi {
-    text-align: center;
-}
-
-.title {
-    text-align: center;
-    color: #ffff;
-    font-size: xx-large;
-}
-
 .line-container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 10px;
 }
+
 .line {
     border-top: 2px solid #ffffff;
     height: 0;
@@ -118,11 +93,10 @@ h1 {
 }
 
 .laporan {
-    font-size: 50px;
+    font-size: 40px;
     color: #fff;
     text-align: center;
-    position: relative;
-    top: -355px;
+    margin-top: 20px;
 }
 
 .form {
@@ -131,10 +105,7 @@ h1 {
     background-color: var(--second-color);
     border-radius: 25px;
     max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 25);
-    text-align: justify;
-    position: relative;
-    top: -350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .form label {
@@ -142,7 +113,6 @@ h1 {
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: bold;
-    text-align: justify;
     color: white;
 }
 
@@ -156,7 +126,6 @@ h1 {
     margin: 5px 0;
     border: 1px solid #ccc;
     font-size: 20px;
-    text-align: justify;
 }
 
 button {
@@ -176,4 +145,83 @@ button {
 
 button:hover {
     background-color: #357abd;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar a {
+        font-size: 20px;
+        padding: 10px 12px;
+    }
+
+    .tagline-beranda {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: calc(50% - 40px);
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: calc(100% - 40px);
+        margin: 20px 0;
+    }
+
+    .form {
+        max-width: 90%;
+    }
+
+    .laporan {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .tagline-beranda {
+        font-size: 18px;
+    }
+
+    .laporan {
+        font-size: 30px;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 18px;
+    }
 }
