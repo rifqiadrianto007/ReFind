@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReFind.</title>
-    <link rel="icon" type="iamge/png" href="../GAMBAR/Logo 1.png">
+    <link rel="icon" type="image/png" href="../GAMBAR/Logo 1.png">
     <link rel="stylesheet" href="../CSS/style.css">
     <!-- bagian javascript -->
     <script>
@@ -14,12 +14,10 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            if (username === "232410103098" && password === "QWERTY12345")
-            {
+            if (username === "232410103098" && password === "QWERTY12345") {
                 window.location.href = "page-2.html";
-            }
-            else {
-                document.getElementById('pesan - error').textContent = "Username atau Password Anda Salah!";
+            } else {
+                document.getElementById('pesan-error').textContent = "Username atau Password Anda Salah!";
             }
         }
     </script>
@@ -33,6 +31,7 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
                 <button type="submit">Login</button>
+                <p id="pesan-error" style="color:red;"></p> <!-- Correct ID for the error message -->
             </form>
         </div>
         <div class="tagline">
