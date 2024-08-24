@@ -54,6 +54,17 @@
     width: 100%;
     height: auto;
     padding: 20px;
+    position: relative;
+    animation: moveBox 0.5s infinite alternate;
+}
+
+@keyframes moveBox {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px); /* Sesuaikan dengan berapa jauh kamu ingin kotak bergerak */
+    }
 }
 
 .card {
@@ -126,6 +137,11 @@ h1 {
     margin: 5px 0;
     border: 1px solid #ccc;
     font-size: 20px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
 }
 
 button {
