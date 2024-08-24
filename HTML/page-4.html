@@ -26,7 +26,7 @@
         <h1>Data Penemuan</h1>
         <div class="line"></div>
     </div>
-    <table border="1">
+   <table border="1">
         <tr>
             <th>Nama</th>
             <th>No Telepon</th>
@@ -34,6 +34,7 @@
             <th>Deskripsi Barang</th>
             <th>Ditemukan di-</th>
             <th>Bukti Foto Penemuan Barang</th>
+            <th>Hubungi</th>
         </tr>
         <tr>
             <td>Rifqi</td>
@@ -43,6 +44,9 @@
             <td>Tempat wudhu masjid UNEJ</td>
             <td>
                 <img src="../GAMBAR/jam hilang.jpg" alt="jam tangan hilang">
+            </td>
+            <td>
+                <button onclick="redirWhatsapp()">WhatsApp</button>
             </td>
         </tr>
         <tr>
@@ -54,6 +58,9 @@
             <td>
                 <img src="../GAMBAR/dompet.jpg" alt="dompet hilang" width=200px>
             </td>
+            <td>
+                <button onclick="redirWhatsapp()">WhatsApp</button>
+            </td>
         </tr>
         <tr>
             <td>Satria M</td>
@@ -64,6 +71,9 @@
             <td>
                 <img src="../GAMBAR/kunci motor.jpg" alt="kunci hilang" width=200px>
             </td>
+            <td>
+                <button onclick="redirWhatsapp()">WhatsApp</button>
+            </td>
         </tr>
         <tr>
             <td>Maulana</td>
@@ -73,6 +83,9 @@
             <td>Ruang Kelas</td>
             <td>
                 <img src="../GAMBAR/kunci kos.jpg" alt="kunci kos hilang" width=200px>
+            </td>
+            <td>
+                <button onclick="redirWhatsapp()">WhatsApp</button>
             </td>
         </tr>
         </tr>
@@ -85,5 +98,10 @@
             <td></td>
         </tr>
     </table>
+    <script>
+        function redirWhatsapp () {
+            window.location.href = "https://wa.me/+628192389292"
+        }
+    </script>
 </body>
 </html>
