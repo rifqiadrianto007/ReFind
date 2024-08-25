@@ -10,19 +10,25 @@
     <script>
         function handleLogin(event) {
             event.preventDefault(); 
-
+    
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-
-            if (username === "232410103098" && password === "QWERTY12345") {
-                window.location.href = "page-2.html";
+            const pesanError = document.getElementById('pesan-error');
+    
+            if (username !== "232410103098" && password !== "QWERTY12345") {
+                pesanError.textContent = "Username dan Password Anda Salah!";
             } 
-
+            else if (username !== "232410103098") {
+                pesanError.textContent = "Username Anda Salah!";
+            }
+            else if (password !== "QWERTY12345") {
+                pesanError.textContent = "Password Anda Salah!";
+            }
             else {
-                document.getElementById('pesan-error').textContent = "Username atau Password Anda Salah!";
+                window.location.href = "page-2.html";
             }
         }
-    </script>
+    </script>    
 </head>
 <body class="index">
     <div class="container">
