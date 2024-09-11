@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReFind.</title>
+    <link rel="icon" type="image/png" href="../GAMBAR/Logo 1.png" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- bagian javascript -->
+    <script src="/Project ReFind/JS/login.js"></script>
+  </head>
+  <body class="index">
+    <div class="container">
+      <div class="login-box">
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Login</button>
+          <p id="pesan-error" style="color: red"></p>
+          <!-- Correct ID for the error message -->
+        </form>
+      </div>
+      <div class="tagline">
+        <h1>ReFind.</h1>
+        <h2>"Temukan dan laporkan barang hilang dengan mudah"</h2>
+      </div>
+      <p class="logo">
+        <img src="../GAMBAR/logo semua.png" alt="logo lengkap" width="300px" />
+      </p>
+    </div>
+    <script>
+      document
+        .getElementById("login-form")
+        .addEventListener("submit", handleLogin);
+    </script>
+  </body>
+</html>
