@@ -7,25 +7,7 @@
     <link rel="icon" type="image/png" href="../GAMBAR/Logo 1.png" />
     <link rel="stylesheet" href="../CSS/style.css" />
     <!-- bagian javascript -->
-    <script>
-      function handleLogin(event) {
-        event.preventDefault();
-
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-        const pesanError = document.getElementById("pesan-error");
-
-        if (username !== "232410103098" && password !== "QWERTY12345") {
-          pesanError.textContent = "Username dan Password Anda Salah!";
-        } else if (username !== "232410103098") {
-          pesanError.textContent = "Username Anda Salah!";
-        } else if (password !== "QWERTY12345") {
-          pesanError.textContent = "Password Anda Salah!";
-        } else {
-          window.location.href = "page-2.html";
-        }
-      }
-    </script>
+    <script src="/Project ReFind/JS/login.js"></script>
   </head>
   <body class="index">
     <div class="container">
@@ -53,7 +35,5 @@
         .getElementById("login-form")
         .addEventListener("submit", handleLogin);
     </script>
-    <script src="/SEMESTER 3/FUNCTIONAL PROGRAMMING/pertemuan2.js"></script>
-    <!-- TEMPAT MELETAKKAN FILE JS -->
   </body>
 </html>
