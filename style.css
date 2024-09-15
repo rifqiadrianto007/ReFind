@@ -27,7 +27,7 @@ h1, h2 {
 }
 
 body {
-    background-image: url(../GAMBAR/bg-login.png);
+    background-image: url(/GAMBAR/bg-login.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
